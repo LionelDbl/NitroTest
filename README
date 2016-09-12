@@ -1,0 +1,47 @@
+CONTENTS OF THIS FILE
+---------------------
+ * Folder details
+ * Build
+ * How To Use
+ * Requirements
+
+ 
+FOLDER DETAILS
+--------------
+
+bin 			--> :folder: executable output if makefile is used
+NitroTest		--> :folder: source files			
+Release			--> :folder: executable output if NitroTest.sln is used
+JSON.txt		--> :file: example of JSON format I used
+makefile		--> :file: makefile
+NitroTest.sln	--> :file: solution for visual studio 2013
+README			--> :file: README
+
+ 
+BUILD
+-----
+
+The application can be built with:
+
+	(1) Visual Studio 2013 via the solution NitroTest.sln
+	  the binary NitroTest.exe will be generated in Release or Debug depending on the configuration used in Visual Studio
+	  
+	(2) Make via the makefile
+	  the folder ./bin and ./NitroTest/obj must exist before lauching the command make
+	  the binary NitroTest will be generated in bin
+	  
+
+HOW TO USE
+----------
+
+Put a JSON_file in the same folder of the executable NitroTest
+Launch the command: NitroTest.exe JSON_file
+An output.txt file will be generated in the same folder as the executable NitroTest
+
+
+REQUIREMENTS
+------------
+
+I used a specific format for the validation of the JSON file, see JSON.txt.
+I assumed the JSON must contain the right number of tabulation at the beginning of the lines.
+The JSON file must comply with this format otherwise it will not be processed.
