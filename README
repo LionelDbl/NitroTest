@@ -26,8 +26,7 @@ The application can be built with:
 	(1) Visual Studio 2013 via the solution NitroTest.sln
 	  the binary NitroTest.exe will be generated in Release or Debug depending on the configuration used in Visual Studio
 	  
-	(2) Make via the makefile
-	  the folder ./bin and ./NitroTest/obj must exist before lauching the command make
+	(2) the bash script build.sh
 	  the binary NitroTest will be generated in bin
 	  
 
