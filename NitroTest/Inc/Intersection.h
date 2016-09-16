@@ -21,6 +21,7 @@ public:
    {
       Rectangle::operator=(cp);
       m_nos = cp.m_nos;
+      return *this;
    };
 
    Intersection(Intersection&& mv)
