@@ -1,4 +1,4 @@
-CFLAGS = -std=c++11
+CFLAGS = -std=c++11 -Wall
 
 NitroTest: Main.o CommandLine.o FileLoader.o IntersectionsCalculator.o OutputGenerator.o Rectangle.o Utils.o
 	g++ -o ./bin/NitroTest ./NitroTest/obj/Main.o ./NitroTest/obj/CommandLine.o ./NitroTest/obj/FileLoader.o ./NitroTest/obj/IntersectionsCalculator.o ./NitroTest/obj/OutputGenerator.o ./NitroTest/obj/Rectangle.o ./NitroTest/obj/Utils.o
@@ -25,5 +25,5 @@ Utils.o: ./NitroTest/Src/Utils.cpp
 	g++ -I ./NitroTest/Inc $(CFLAGS) -c ./NitroTest/Src/Utils.cpp -o ./NitroTest/obj/Utils.o
 
 clean:
-	\rm ./NitroTest/obj/*.*
-	\rm ./bin/*.*
+	\rm -f ./NitroTest/obj/*.*
+	\rm -f ./bin/*.*
